@@ -22,7 +22,7 @@
     "clean": "del dist @types/*",
     "clutz": "clutz -o @types/closure.d.ts --partialInput src/closure/hello.js",
     "build": "run-s build:*",
-    "build:closure": "google-closure-compiler --compilation_level ADVANCED --js src/closure --js node_modules/google-closure-library/closure/goog --entry_point src/closure/hello.js --js_output_file dist/hello.js",
+    "build:closure": "google-closure-compiler --compilation_level ADVANCED --js src/closure --js node_modules/google-closure-library/closure/goog --entry_point src/closure/hello.js --js_output_file dist/hello-build.js",
     "build:webpack": "webpack --mode=development",
     "serve": "serve dist"
   },
